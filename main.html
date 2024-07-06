@@ -22,49 +22,41 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table width="100%" >
+     <table>
     <tr>
-        <td width="8%" valign="top" align="center" bordercolor="#663300">
-            <p align="left">
-                <a href="/vatican"><img id="logo" width="64" height="78" title="www.vatican.va" alt="www.vatican.va" src="/vatican/logo-vatican.png"></a>
-            </p>
+        <td width="5%">
+            <a href="/vatican">
+                <img border="0" src="/vatican/logo-vatican.png" width="64" height="78" alt="Index" title="www.vatican.va">
+            </a>
         </td>
-        <td width="83%" align="center" bordercolor="#663300">
-
-
-            <table width="100%" border="0" class="tab navbar" style="background-color:#DDD4BB" text-align="center">
-                <tbody>
-                <tr>
-                    <td style="border-right: 1px solid #D3C3AD;">
-                       
-                    </td>
-                    <td style="border-right: 1px solid #D3C3AD;">
-                       
-                    </td>
-                    <td style="border-right: 1px solid #D3C3AD;">
-                  
-                    </td>
-                    <td class="mobile-gone size32">
-                 
-                    </td>
-                    <td class="mobile-gone size32">
-       
-                    </td>
-                    <td class="mobile-gone size32">
-
-                    </td >
-                    <td class="mobile-gone size32">
-                            <button id="logout-button">Logout</button>
-                            <script src="logout.js"></script>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-            <!-- /NAVBAR -->
+        <td width="55%">&nbsp;</td>
+        <td align="center" width="20%">
         </td>
+        <td width="5%">
+            <a href="#" onclick="javascript:history.go(-1);return false;">
+                <img border="0" src="/vatican/back.png" width="32" height="32" alt="Back" title="Back">
+            </a>
+        </td>
+        <td width="5%">
+<a href="/vatican">
+                <img border="0" src="/vatican/top.png" width="32" height="32" alt="Top" title="Top">
+            </a>
+        </td>
+        <td width="5%">
+            <a href="#" onclick="self.print(); return false;">
+                <img border="0" src="/vatican/print.png" alt="Print" title="Print" width="26" height="26">
+            </a>
+        </td>
+        <td width="5%">
+            <div class="headerpdf">
+
+
+    <button id="logout-button">Logout</button>
+    <script src="logout.js"></script>
+</div>
+</td>
     </tr>
 </table>
-
     <button id="logout-button">Logout</button>
     <script src="logout.js"></script>
 </body>
