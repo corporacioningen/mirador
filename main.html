@@ -117,6 +117,32 @@ body{
         </div>
     </div>
     </div>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuTitles = document.querySelectorAll('.menu-title');
+
+            menuTitles.forEach(function(title) {
+                title.addEventListener('click', function() {
+                    const submenu = this.nextElementSibling;
+                    if (submenu.style.display === 'block') {
+                        submenu.style.display = 'none';
+                    } else {
+                        submenu.style.display = 'block';
+                    }
+                });
+            });
+
+            // Cerrar submenús si se hace clic fuera de ellos
+            window.addEventListener('click', function(event) {
+                if (!event.target.matches('.menu-title')) {
+                    const submenus = document.querySelectorAll('.submenu-content');
+                    submenus.forEach(function(submenu) {
+                        submenu.style.display = 'none';
+                    });
+                }
+            });
+        });
+    </script>
 <body>
     
 </body>
