@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-
+.container {
+    background-color: white;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 1px solid #1C1B17;
+}
+    
 </style>
 <head>
     <meta charset="UTF-8">
@@ -9,6 +18,47 @@
     <title>Plumier XXI: Centros</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <table width="100%" >
+    <tr>
+        <td width="8%" valign="top" align="center" bordercolor="#663300">
+            <p align="left">
+                <a href="/vatican"><img id="logo" width="64" height="78" title="www.vatican.va" alt="www.vatican.va" src="/vatican/logo-vatican.png"></a>
+            </p>
+        </td>
+        <td width="83%" align="center" bordercolor="#663300">
+
+
+            <table width="100%" border="0" class="tab navbar" style="background-color:#DDD4BB" text-align="center">
+                <tbody>
+                <tr>
+                    <td style="border-right: 1px solid #D3C3AD;">
+                        <div class="item"><a href="https://www.vatican.va/holy_father/index_sp.htm">SANTO PADRE</a></div>
+                    </td>
+                    <td style="border-right: 1px solid #D3C3AD;">
+                        <div class="item"><a href="https://www.vatican.va/roman_curia/cardinals/index_sp.htm">COLEGIO CARDENALICIO</a></div>
+                    </td>
+                    <td style="border-right: 1px solid #D3C3AD;">
+                        <div class="item"><a href="https://www.vatican.va/content/romancuria/es.html">CURIA ROMANA</a></div>
+                    </td>
+                    <td class="mobile-gone size32">
+                        <a href="javascript:history.go(-1)"> <img width="32" height="32" src="/vatican/back.png" alt="Back" title="Back"></a>
+                    </td>
+                    <td class="mobile-gone size32">
+                        <a href="/vatican" onclick="up();return false;"> <img width="32" height="32" src="/vatican/top.png" alt="Top" title="Top"></a>
+                    </td>
+                    <td class="mobile-gone size32">
+                        <a href="#" onclick="self.print();return false;"><img width="26" height="26" src="/vatican/print.png" alt="Print" title="Print"></a>
+                    </td >
+                    <td class="mobile-gone size32">
+                        <a title="Search" target="_blank" href="/content/vatican/es/search.html"><img width="32" height="32" alt="Search" src="/vatican/search.png"></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- /NAVBAR -->
+        </td>
+    </tr>
+</table>
 <body>
     <button id="logout-button">Logout</button>
     <script src="logout.js"></script>
